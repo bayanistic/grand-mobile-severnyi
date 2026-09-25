@@ -8,132 +8,164 @@
 </head>
 <body>
 
-    <header style="text-align: center; margin-bottom: 30px;">
-        <h1 class="gold">GRAND MOBILE</h1>
-        <h2 class="gold">Severnyi</h2>
-        <p class="gray-text">Фан-канал и помощь игрокам</p>
+    <!-- Шапка -->
+    <header class="top-header">
+        <button class="header-icon" onclick="toggleMenu()">
+            <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+        <div class="header-logo">
+            <h1>GRAND MOBILE</h1>
+            <p>Severnyi</p>
+        </div>
+        <button class="header-icon">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        </button>
     </header>
 
-    <!-- Карточка промокода -->
-    <div class="card card-gold-border" style="text-align: center;">
-        <h2 class="gray-text" style="font-size: 14px; letter-spacing: 2px;">ПРОМОКОД</h2>
-        <h1 class="gold" style="font-size: 32px; margin: 10px 0;">SEVERNYI</h1>
-        <p class="gray-text" style="font-size: 12px; margin-bottom: 15px;">
-            *доступно только для игроков до 5 уровня
-        </p>
-        <div style="background: #fff; color: #303841; padding: 15px; border-radius: 8px; display: inline-block;">
-            <strong>VIP SILVER</strong><br>
-            7 дней<br>
-            <span style="color: #e4b328; font-size: 18px; font-weight: bold;">+ 30 000 ₽</span>
-        </div>
-    </div>
-
-    <!-- Преимущества -->
-    <h2 class="page-title">НАШИ ПРЕИМУЩЕСТВА</h2>
-    <div class="card" style="text-align: center;">
-        <div style="font-size: 60px;">⚖️</div>
-        <h3>Справедливые условия победы</h3>
-    </div>
-
-    <!-- Активные мероприятия -->
-    <h2 class="page-title">АКТИВНЫЕ МЕРОПРИЯТИЯ</h2>
-    <div class="card" style="text-align: left;">
-        <h3>Акция "Приведи друга" 🎉</h3>
-        <p class="gray-text" style="margin: 10px 0;">
-            Приглашайте друзей и зарабатывайте SevCoins, топовые приглашатели получат SevDiamonds!
-        </p>
-        <a href="events.html" class="btn">Подробнее →</a>
-    </div>
-
-    <div class="card" style="text-align: center;">
-        <p>Мероприятия ожидаются...<br>Наша команда уже работает над созданием следующего мероприятия</p>
-    </div>
-
-    <!-- Победители последнего мероприятия -->
-    <h2 class="page-title">ПОБЕДИТЕЛИ ПОСЛЕДНЕГО МЕРОПРИЯТИЯ</h2>
-    <div class="card">
-        <p><strong>Наименование события:</strong> Розыгрыш #6</p>
-        <p style="margin-top: 10px;"><strong>Награда:</strong></p>
-        <p>🥇 750 000 игровых рублей</p>
-        <p> 450 000 игровых рублей</p>
-        <p> 300 000 игровых рублей</p>
-        <p style="margin-top: 10px;"><strong>Дата награждения:</strong> 31.05.2026</p>
-        <p style="margin-top: 10px;"><strong>Победители:</strong></p>
-        <p> Expressed_Darknees</p>
-        <p>🥈 Derox_Lancastery</p>
-        <p>🥉 Okwozy_Zakirov</p>
-    </div>
-    <p style="text-align: center;">
-        <a href="archive.html">Архив победителей →</a>
-    </p>
-
-    <!-- Топ победителей -->
-    <h2 class="page-title">ТОП ПОБЕДИТЕЛЕЙ</h2>
-    <table>
-        <tr>
-            <th>Имя игрока</th>
-            <th>Кол-во побед</th>
-        </tr>
-        <tr>
-            <td>Vasya Spokoinyi<br>Okwozy Zakirov</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>Ivan Jackson<br>Derox Lancastery</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Hyman_Beber</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>Zizka Curitsa<br>Suren Ganster<br>Mikhalych Boss<br>Expressed Darknees<br>Vova Gang</td>
-            <td>1</td>
-        </tr>
-    </table>
-
-    <!-- Отзывы -->
-    <h2 class="page-title">ОТЗЫВЫ УЧАСТНИКОВ</h2>
-    <div class="review">
-        <div class="review-author">Zizka Curitsa</div>
-        <p class="gray-text" style="font-size: 12px;">10.01.2026 • Победитель розыгрыша #1</p>
-        <p class="review-text" style="margin-top: 10px;">
-            Хочу выразить искреннюю благодарность команде Severnyi за проведение таких конкурсов!!! Такие суммы тяжело заработать начинающим игрокам... Я была в шоке, когда увидела результаты конкурса. Даже не знаю, просто не верилось, но я уже получила приз. Ещё раз спасибо большое!!!
-        </p>
-    </div>
-    <p style="text-align: center;">
-        <a href="reviews.html">К отзывам →</a>
-    </p>
-
-    <!-- Центр поддержки -->
-    <h2 class="page-title">ЦЕНТР ПОДДЕРЖКИ</h2>
-    <div class="card" style="text-align: center;">
-        <p>Центр поддержки – Ваш надёжный проводник среди часто задаваемых вопросов, полезных советов и консультаций от профессионалов. Мы стремимся оперативно решать Ваши запросы и обеспечивать комфортный доступ ко всей необходимой информации.</p>
-        <a href="support.html" class="btn-outline">В центр поддержки</a>
-    </div>
-
-    <!-- Скачать игру -->
-    <h2 class="page-title">↓ СКАЧАТЬ ИГРУ ↓</h2>
-    <div class="card" style="text-align: center;">
-        <p><a href="#">📥 Play Market</a></p>
-        <p><a href="#">📥 RuStore</a></p>
-        <p><a href="#">📥 App Store</a></p>
-        <p><a href="#">📥 .APK (с официального сайта)</a></p>
-    </div>
-
-    <!-- Присоединяйтесь -->
-    <h2 class="page-title">· Присоединяйтесь ·</h2>
-    <div style="text-align: center; margin-bottom: 30px;">
-        <a href="#" class="btn" style="background-color: #0088cc; color: #fff; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; font-size: 24px;">✈</a>
-    </div>
-
-    <!-- Нижняя навигация -->
-    <nav class="bottom-nav">
-        <a href="index.html" class="active">🏠 Главная</a>
-        <a href="events.html">🎉 Мероприятия</a>
-        <a href="rules.html">📜 Правила</a>
-        <a href="support.html">🙋 Поддержка</a>
+    <!-- Боковое меню -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="side-menu" id="sideMenu">
+        <button class="menu-close" onclick="closeMenu()">
+            <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+        <ul class="menu-list">
+            <li><a href="index.html" class="active"><span class="menu-icon">🏠</span> Главная</a></li>
+            <li>
+                <button onclick="toggleSubmenu()">
+                    <span class="menu-icon">🎉</span> Мероприятия <span class="arrow-icon" id="eventsArrow">▼</span>
+                </button>
+                <div class="submenu" id="eventsSubmenu">
+                    <a href="events.html#referral">Приведи друга</a>
+                    <a href="events.html#lottery">Лотерея</a>
+                    <a href="events.html#auction">Аукцион</a>
+                </div>
+            </li>
+            <li><a href="rules.html"><span class="menu-icon">📜</span> Правила</a></li>
+            <li><a href="archive.html"><span class="menu-icon">🏆</span> Архив победителей</a></li>
+            <li><a href="reviews.html"><span class="menu-icon">⭐</span> Отзывы</a></li>
+            <li><a href="support.html"><span class="menu-icon">🙋</span> Центр поддержки</a></li>
+        </ul>
     </nav>
+
+    <!-- Контент -->
+    <div class="content">
+
+        <!-- Карточка промокода -->
+        <div class="card card-gold-border" style="text-align: center;">
+            <h2 class="gray-text" style="font-size: 14px; letter-spacing: 2px;">ПРОМОКОД</h2>
+            <h1 class="gold" style="font-size: 32px; margin: 10px 0;">SEVERNYI</h1>
+            <p class="gray-text" style="font-size: 12px; margin-bottom: 15px;">
+                *доступно только для игроков до 5 уровня
+            </p>
+            <div style="background: #fff; color: #303841; padding: 15px; border-radius: 8px; display: inline-block;">
+                <strong>VIP SILVER</strong><br>
+                7 дней<br>
+                <span style="color: #e4b328; font-size: 18px; font-weight: bold;">+ 30 000 ₽</span>
+            </div>
+        </div>
+
+        <!-- Преимущества -->
+        <h2 class="page-title">НАШИ ПРЕИМУЩЕСТВА</h2>
+        <div class="card" style="text-align: center;">
+            <div style="font-size: 60px;">⚖️</div>
+            <h3>Справедливые условия победы</h3>
+        </div>
+
+        <!-- Активные мероприятия -->
+        <h2 class="page-title">АКТИВНЫЕ МЕРОПРИЯТИЯ</h2>
+        <div class="card" style="text-align: left;">
+            <h3>Акция "Приведи друга" 🎉</h3>
+            <p class="gray-text" style="margin: 10px 0;">
+                Приглашайте друзей и зарабатывайте SevCoins, топовые приглашатели получат SevDiamonds!
+            </p>
+            <a href="events.html" class="btn">Подробнее →</a>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <p>Мероприятия ожидаются...<br>Наша команда уже работает над созданием следующего мероприятия</p>
+        </div>
+
+        <!-- Победители последнего мероприятия -->
+        <h2 class="page-title">ПОБЕДИТЕЛИ ПОСЛЕДНЕГО МЕРОПРИЯТИЯ</h2>
+        <div class="card">
+            <p><strong>Наименование события:</strong> Розыгрыш #6</p>
+            <p style="margin-top: 10px;"><strong>Награда:</strong></p>
+            <p> 750 000 игровых рублей</p>
+            <p> 450 000 игровых рублей</p>
+            <p>🥉 300 000 игровых рублей</p>
+            <p style="margin-top: 10px;"><strong>Дата награждения:</strong> 31.05.2026</p>
+            <p style="margin-top: 10px;"><strong>Победители:</strong></p>
+            <p>🥇 Expressed_Darknees</p>
+            <p>🥈 Derox_Lancastery</p>
+            <p>🥉 Okwozy_Zakirov</p>
+        </div>
+        <p style="text-align: center;">
+            <a href="archive.html">Архив победителей →</a>
+        </p>
+
+        <!-- Топ победителей -->
+        <h2 class="page-title">ТОП ПОБЕДИТЕЛЕЙ</h2>
+        <table>
+            <tr>
+                <th>Имя игрока</th>
+                <th>Кол-во побед</th>
+            </tr>
+            <tr>
+                <td>Vasya Spokoinyi<br>Okwozy Zakirov</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Ivan Jackson<br>Derox Lancastery</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Hyman_Beber</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Zizka Curitsa<br>Suren Ganster<br>Mikhalych Boss<br>Expressed Darknees<br>Vova Gang</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        <!-- Отзывы -->
+        <h2 class="page-title">ОТЗЫВЫ УЧАСТНИКОВ</h2>
+        <div class="review">
+            <div class="review-author">Zizka Curitsa</div>
+            <p class="gray-text" style="font-size: 12px;">10.01.2026 • Победитель розыгрыша #1</p>
+            <p class="review-text" style="margin-top: 10px;">
+                Хочу выразить искреннюю благодарность команде Severnyi за проведение таких конкурсов!!! Такие суммы тяжело заработать начинающим игрокам... Я была в шоке, когда увидела результаты конкурса. Даже не знаю, просто не верилось, но я уже получила приз. Ещё раз спасибо большое!!!
+            </p>
+        </div>
+        <p style="text-align: center;">
+            <a href="reviews.html">К отзывам →</a>
+        </p>
+
+        <!-- Центр поддержки -->
+        <h2 class="page-title">ЦЕНТР ПОДДЕРЖКИ</h2>
+        <div class="card" style="text-align: center;">
+            <p>Центр поддержки – Ваш надёжный проводник среди часто задаваемых вопросов, полезных советов и консультаций от профессионалов. Мы стремимся оперативно решать Ваши запросы и обеспечивать комфортный доступ ко всей необходимой информации.</p>
+            <a href="support.html" class="btn-outline">В центр поддержки</a>
+        </div>
+
+        <!-- Скачать игру -->
+        <h2 class="page-title">↓ СКАЧАТЬ ИГРУ ↓</h2>
+        <div class="card" style="text-align: center;">
+            <p><a href="#">📥 Play Market</a></p>
+            <p><a href="#">📥 RuStore</a></p>
+            <p><a href="#">📥 App Store</a></p>
+            <p><a href="#">📥 .APK (с официального сайта)</a></p>
+        </div>
+
+        <!-- Присоединяйтесь -->
+        <h2 class="page-title">· Присоединяйтесь ·</h2>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="#" class="btn" style="background-color: #0088cc; color: #fff; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; font-size: 24px;">✈</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
