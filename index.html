@@ -4,99 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Mobile Severnyi</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background-color: #303841;
-            color: #ffffff;
-            font-family: 'Segoe UI', sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .gold { color: #e4b328; }
-        .card {
-            background-color: #3a444f;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            border: 2px solid #e4b328;
-            text-align: center;
-        }
-        .btn {
-            background-color: #e4b328;
-            color: #303841;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: #3a444f;
-            border-top: 1px solid #e4b328;
-            display: flex;
-            justify-content: space-around;
-            padding: 15px 0;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        nav a {
-            color: #b0b8c1;
-            text-decoration: none;
-        }
-        nav a.active { color: #e4b328; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header style="text-align: center; margin-bottom: 30px;">
         <h1 class="gold">GRAND MOBILE</h1>
         <h2 class="gold">Severnyi</h2>
-        <p style="color: #b0b8c1;">Фан-канал и помощь игрокам</p>
+        <p class="gray-text">Фан-канал и помощь игрокам</p>
     </header>
 
     <!-- Карточка промокода -->
-    <div class="card">
-        <h2 style="color: #b0b8c1; font-size: 14px; letter-spacing: 1px;">ПРОМОКОД</h2>
+    <div class="card card-gold-border" style="text-align: center;">
+        <h2 class="gray-text" style="font-size: 14px; letter-spacing: 2px;">ПРОМОКОД</h2>
         <h1 class="gold" style="font-size: 32px; margin: 10px 0;">SEVERNYI</h1>
-        <p style="color: #b0b8c1; font-size: 12px; margin-bottom: 15px;">
+        <p class="gray-text" style="font-size: 12px; margin-bottom: 15px;">
             *доступно только для игроков до 5 уровня
         </p>
-        <div style="background: #fff; color: #303841; padding: 10px; border-radius: 8px; display: inline-block;">
+        <div style="background: #fff; color: #303841; padding: 15px; border-radius: 8px; display: inline-block;">
             <strong>VIP SILVER</strong><br>
-            7 дней + <span class="gold" style="font-size: 18px; font-weight: bold;">30 000 ₽</span>
+            7 дней<br>
+            <span style="color: #e4b328; font-size: 18px; font-weight: bold;">+ 30 000 ₽</span>
         </div>
     </div>
 
     <!-- Преимущества -->
-    <h2 style="text-align: center; margin: 40px 0 20px;">НАШИ ПРЕИМУЩЕСТВА</h2>
-    <div class="card" style="border: none;">
+    <h2 class="page-title">НАШИ ПРЕИМУЩЕСТВА</h2>
+    <div class="card" style="text-align: center;">
         <div style="font-size: 60px;">⚖️</div>
         <h3>Справедливые условия победы</h3>
     </div>
 
     <!-- Активные мероприятия -->
-    <h2 style="text-align: center; margin: 40px 0 20px;">АКТИВНЫЕ МЕРОПРИЯТИЯ</h2>
-    <div class="card" style="border: none; text-align: left;">
-        <h3>Акция "Приведи друга"</h3>
-        <p style="color: #b0b8c1; margin: 10px 0;">
+    <h2 class="page-title">АКТИВНЫЕ МЕРОПРИЯТИЯ</h2>
+    <div class="card" style="text-align: left;">
+        <h3>Акция "Приведи друга" 🎉</h3>
+        <p class="gray-text" style="margin: 10px 0;">
             Приглашайте друзей и зарабатывайте SevCoins, топовые приглашатели получат SevDiamonds!
         </p>
-        <a href="#" class="btn">Подробнее →</a>
+        <a href="events.html" class="btn">Подробнее →</a>
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <p>Мероприятия ожидаются...<br>Наша команда уже работает над созданием следующего мероприятия</p>
+    </div>
+
+    <!-- Победители последнего мероприятия -->
+    <h2 class="page-title">ПОБЕДИТЕЛИ ПОСЛЕДНЕГО МЕРОПРИЯТИЯ</h2>
+    <div class="card">
+        <p><strong>Наименование события:</strong> Розыгрыш #6</p>
+        <p style="margin-top: 10px;"><strong>Награда:</strong></p>
+        <p>🥇 750 000 игровых рублей</p>
+        <p> 450 000 игровых рублей</p>
+        <p> 300 000 игровых рублей</p>
+        <p style="margin-top: 10px;"><strong>Дата награждения:</strong> 31.05.2026</p>
+        <p style="margin-top: 10px;"><strong>Победители:</strong></p>
+        <p> Expressed_Darknees</p>
+        <p>🥈 Derox_Lancastery</p>
+        <p>🥉 Okwozy_Zakirov</p>
+    </div>
+    <p style="text-align: center;">
+        <a href="archive.html">Архив победителей →</a>
+    </p>
+
+    <!-- Топ победителей -->
+    <h2 class="page-title">ТОП ПОБЕДИТЕЛЕЙ</h2>
+    <table>
+        <tr>
+            <th>Имя игрока</th>
+            <th>Кол-во побед</th>
+        </tr>
+        <tr>
+            <td>Vasya Spokoinyi<br>Okwozy Zakirov</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Ivan Jackson<br>Derox Lancastery</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Hyman_Beber</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Zizka Curitsa<br>Suren Ganster<br>Mikhalych Boss<br>Expressed Darknees<br>Vova Gang</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <!-- Отзывы -->
+    <h2 class="page-title">ОТЗЫВЫ УЧАСТНИКОВ</h2>
+    <div class="review">
+        <div class="review-author">Zizka Curitsa</div>
+        <p class="gray-text" style="font-size: 12px;">10.01.2026 • Победитель розыгрыша #1</p>
+        <p class="review-text" style="margin-top: 10px;">
+            Хочу выразить искреннюю благодарность команде Severnyi за проведение таких конкурсов!!! Такие суммы тяжело заработать начинающим игрокам... Я была в шоке, когда увидела результаты конкурса. Даже не знаю, просто не верилось, но я уже получила приз. Ещё раз спасибо большое!!!
+        </p>
+    </div>
+    <p style="text-align: center;">
+        <a href="reviews.html">К отзывам →</a>
+    </p>
+
+    <!-- Центр поддержки -->
+    <h2 class="page-title">ЦЕНТР ПОДДЕРЖКИ</h2>
+    <div class="card" style="text-align: center;">
+        <p>Центр поддержки – Ваш надёжный проводник среди часто задаваемых вопросов, полезных советов и консультаций от профессионалов. Мы стремимся оперативно решать Ваши запросы и обеспечивать комфортный доступ ко всей необходимой информации.</p>
+        <a href="support.html" class="btn-outline">В центр поддержки</a>
+    </div>
+
+    <!-- Скачать игру -->
+    <h2 class="page-title">↓ СКАЧАТЬ ИГРУ ↓</h2>
+    <div class="card" style="text-align: center;">
+        <p><a href="#">📥 Play Market</a></p>
+        <p><a href="#">📥 RuStore</a></p>
+        <p><a href="#">📥 App Store</a></p>
+        <p><a href="#">📥 .APK (с официального сайта)</a></p>
+    </div>
+
+    <!-- Присоединяйтесь -->
+    <h2 class="page-title">· Присоединяйтесь ·</h2>
+    <div style="text-align: center; margin-bottom: 30px;">
+        <a href="#" class="btn" style="background-color: #0088cc; color: #fff; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; font-size: 24px;">✈</a>
     </div>
 
     <!-- Нижняя навигация -->
-    <nav>
-        <a href="/" class="active">Главная</a>
-        <a href="events.html">Мероприятия</a>
-        <a href="rules.html">Правила</a>
-        <a href="support.html">Поддержка</a>
+    <nav class="bottom-nav">
+        <a href="index.html" class="active">🏠 Главная</a>
+        <a href="events.html">🎉 Мероприятия</a>
+        <a href="rules.html">📜 Правила</a>
+        <a href="support.html">🙋 Поддержка</a>
     </nav>
 
 </body>
