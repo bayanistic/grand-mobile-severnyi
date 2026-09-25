@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Mobile Severnyi</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #303841;
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .gold { color: #e4b328; }
+        .card {
+            background-color: #3a444f;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #e4b328;
+            text-align: center;
+        }
+        .btn {
+            background-color: #e4b328;
+            color: #303841;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #3a444f;
+            border-top: 1px solid #e4b328;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        nav a {
+            color: #b0b8c1;
+            text-decoration: none;
+        }
+        nav a.active { color: #e4b328; }
+    </style>
+</head>
+<body>
+
+    <header style="text-align: center; margin-bottom: 30px;">
+        <h1 class="gold">GRAND MOBILE</h1>
+        <h2 class="gold">Severnyi</h2>
+        <p style="color: #b0b8c1;">Фан-канал и помощь игрокам</p>
+    </header>
+
+    <!-- Карточка промокода -->
+    <div class="card">
+        <h2 style="color: #b0b8c1; font-size: 14px; letter-spacing: 1px;">ПРОМОКОД</h2>
+        <h1 class="gold" style="font-size: 32px; margin: 10px 0;">SEVERNYI</h1>
+        <p style="color: #b0b8c1; font-size: 12px; margin-bottom: 15px;">
+            *доступно только для игроков до 5 уровня
+        </p>
+        <div style="background: #fff; color: #303841; padding: 10px; border-radius: 8px; display: inline-block;">
+            <strong>VIP SILVER</strong><br>
+            7 дней + <span class="gold" style="font-size: 18px; font-weight: bold;">30 000 ₽</span>
+        </div>
+    </div>
+
+    <!-- Преимущества -->
+    <h2 style="text-align: center; margin: 40px 0 20px;">НАШИ ПРЕИМУЩЕСТВА</h2>
+    <div class="card" style="border: none;">
+        <div style="font-size: 60px;">⚖️</div>
+        <h3>Справедливые условия победы</h3>
+    </div>
+
+    <!-- Активные мероприятия -->
+    <h2 style="text-align: center; margin: 40px 0 20px;">АКТИВНЫЕ МЕРОПРИЯТИЯ</h2>
+    <div class="card" style="border: none; text-align: left;">
+        <h3>Акция "Приведи друга"</h3>
+        <p style="color: #b0b8c1; margin: 10px 0;">
+            Приглашайте друзей и зарабатывайте SevCoins, топовые приглашатели получат SevDiamonds!
+        </p>
+        <a href="#" class="btn">Подробнее →</a>
+    </div>
+
+    <!-- Нижняя навигация -->
+    <nav>
+        <a href="/" class="active">Главная</a>
+        <a href="events.html">Мероприятия</a>
+        <a href="rules.html">Правила</a>
+        <a href="support.html">Поддержка</a>
+    </nav>
+
+</body>
+</html>
