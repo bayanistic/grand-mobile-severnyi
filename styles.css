@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303841;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 20px 90px 20px;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.gold {
+    color: #e4b328;
+}
+
+.gray-text {
+    color: #b0b8c1;
+}
+
+/* Карточки */
+.card {
+    background-color: #3a444f;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card-gold-border {
+    border: 2px solid #e4b328;
+    box-shadow: 0 0 15px rgba(228, 179, 40, 0.2);
+}
+
+/* Кнопки */
+.btn {
+    background-color: #e4b328;
+    color: #303841;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #e4b328;
+    border: 2px solid #e4b328;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Нижняя навигация */
+nav.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3a444f;
+    border-top: 1px solid #e4b328;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+nav.bottom-nav a {
+    color: #b0b8c1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav.bottom-nav a.active {
+    color: #e4b328;
+    font-weight: bold;
+}
+
+/* Заголовок страницы */
+.page-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0 20px;
+    letter-spacing: 1px;
+}
+
+/* Ссылки */
+a {
+    color: #e4b328;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #e4b328;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #3a444f;
+    color: #e4b328;
+}
+
+/* Отзыв */
+.review {
+    background-color: #3a444f;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #e4b328;
+}
+
+.review-author {
+    color: #e4b328;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-style: italic;
+    color: #b0b8c1;
+}
