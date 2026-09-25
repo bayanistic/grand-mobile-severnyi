@@ -8,21 +8,16 @@
 </head>
 <body>
 
-    <!-- Шапка -->
     <header class="top-header">
         <button class="header-icon" onclick="toggleMenu()">
             <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
         </button>
-        <div class="header-logo">
-            <h1>GRAND MOBILE</h1>
-            <p>Severnyi</p>
-        </div>
+        <div class="header-logo"><h1>GRAND MOBILE</h1><p>Severnyi</p></div>
         <button class="header-icon">
             <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
         </button>
     </header>
 
-    <!-- Боковое меню -->
     <div class="menu-overlay" id="menuOverlay"></div>
     <nav class="side-menu" id="sideMenu">
         <button class="menu-close" onclick="closeMenu()">
@@ -47,38 +42,35 @@
         </ul>
     </nav>
 
-    <!-- Контент -->
     <div class="content">
-
         <h2 class="page-title">ОТЗЫВЫ УЧАСТНИКОВ</h2>
 
         <div class="review">
             <div class="review-author">Zizka Curitsa</div>
             <p class="gray-text" style="font-size: 12px;">10.01.2026 • Победитель розыгрыша #1</p>
-            <p class="review-text" style="margin-top: 10px;">
-                Хочу выразить искреннюю благодарность команде Severnyi за проведение таких конкурсов!!! Такие суммы тяжело заработать начинающим игрокам... Я была в шоке, когда увидела результаты конкурса. Даже не знаю, просто не верилось, но я уже получила приз. Ещё раз спасибо большое!!!
-            </p>
+            <p class="review-text" style="margin-top: 10px;">Хочу выразить искреннюю благодарность команде Severnyi за проведение таких конкурсов!!! Такие суммы тяжело заработать начинающим игрокам... Я была в шоке, когда увидела результаты конкурса. Даже не знаю, просто не верилось, но я уже получила приз. Ещё раз спасибо большое!!!</p>
         </div>
 
         <div class="review">
             <div class="review-author">Vasya Spokoinyi</div>
             <p class="gray-text" style="font-size: 12px;">20.04.2026 • Победитель розыгрыша #5</p>
-            <p class="review-text" style="margin-top: 10px;">
-                Отличное мероприятие! Всё честно и прозрачно. Награду получил вовремя. Рекомендую участвовать всем!
-            </p>
+            <p class="review-text" style="margin-top: 10px;">Отличное мероприятие! Всё честно и прозрачно. Награду получил вовремя. Рекомендую участвовать всем!</p>
         </div>
 
         <div class="review">
             <div class="review-author">Hyman_Beber</div>
             <p class="gray-text" style="font-size: 12px;">05.05.2026 • Участник</p>
-            <p class="review-text" style="margin-top: 10px;">
-                Классный проект, ждём новых мероприятий! Условия понятные, поддержка отвечает быстро.
-            </p>
+            <p class="review-text" style="margin-top: 10px;">Классный проект, ждём новых мероприятий! Условия понятные, поддержка отвечает быстро.</p>
         </div>
-
     </div>
 
-    <script src="script.js"></script>
+    <nav class="bottom-nav">
+        <a href="index.html"><span class="bottom-nav-icon"></span><span>Главная</span></a>
+        <a href="events.html"><span class="bottom-nav-icon">🎉</span><span>Мероприятия</span></a>
+        <a href="archive.html"><span class="bottom-nav-icon">🏆</span><span>Победители</span></a>
+        <a href="support.html"><span class="bottom-nav-icon">🙋</span><span>Поддержка</span></a>
+    </nav>
 
+    <script src="script.js"></script>
 </body>
 </html>
