@@ -8,49 +8,85 @@
 </head>
 <body>
 
-    <header style="text-align: center; margin-bottom: 30px;">
-        <h1 class="gold">МЕРОПРИЯТИЯ</h1>
-        <p class="gray-text">Активные события и акции</p>
+    <!-- Шапка -->
+    <header class="top-header">
+        <button class="header-icon" onclick="toggleMenu()">
+            <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+        <div class="header-logo">
+            <h1>GRAND MOBILE</h1>
+            <p>Severnyi</p>
+        </div>
+        <button class="header-icon">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        </button>
     </header>
 
-    <!-- Активная акция -->
-    <div class="card card-gold-border">
-        <h2 class="gold">Акция "Приведи друга" 🎉</h2>
-        <p style="margin: 15px 0;">
-            Приглашайте друзей и зарабатывайте <strong class="gold">SevCoins</strong>, топовые приглашатели получат <strong class="gold">SevDiamonds</strong>!
-        </p>
-        <h3 style="margin-top: 15px;">Условия:</h3>
-        <ul style="margin: 10px 0 10px 20px; color: #b0b8c1;">
-            <li>Пригласите друга по вашему промокоду</li>
-            <li>Друг должен достичь 5 уровня</li>
-            <li>Вы получаете 1000 SevCoins за каждого друга</li>
-            <li>Топ-3 приглашателя получают SevDiamonds</li>
+    <!-- Боковое меню -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="side-menu" id="sideMenu">
+        <button class="menu-close" onclick="closeMenu()">
+            <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+        <ul class="menu-list">
+            <li><a href="index.html"><span class="menu-icon">🏠</span> Главная</a></li>
+            <li>
+                <button onclick="toggleSubmenu()">
+                    <span class="menu-icon">🎉</span> Мероприятия <span class="arrow-icon" id="eventsArrow">▼</span>
+                </button>
+                <div class="submenu" id="eventsSubmenu">
+                    <a href="events.html#referral">Приведи друга</a>
+                    <a href="events.html#lottery">Лотерея</a>
+                    <a href="events.html#auction">Аукцион</a>
+                </div>
+            </li>
+            <li><a href="rules.html"><span class="menu-icon">📜</span> Правила</a></li>
+            <li><a href="archive.html"><span class="menu-icon">🏆</span> Архив победителей</a></li>
+            <li><a href="reviews.html"><span class="menu-icon">⭐</span> Отзывы</a></li>
+            <li><a href="support.html"><span class="menu-icon">🙋</span> Центр поддержки</a></li>
         </ul>
-        <a href="#" class="btn">Участвовать</a>
-    </div>
-
-    <!-- Лотерея -->
-    <div class="card">
-        <h2 class="gold">Лотерея</h2>
-        <p class="gray-text" style="margin: 10px 0;">
-            Скоро! Следите за обновлениями.
-        </p>
-    </div>
-
-    <!-- Аукцион -->
-    <div class="card">
-        <h2 class="gold">Аукцион</h2>
-        <p class="gray-text" style="margin: 10px 0;">
-            Скоро! Следите за обновлениями.
-        </p>
-    </div>
-
-    <nav class="bottom-nav">
-        <a href="index.html">🏠 Главная</a>
-        <a href="events.html" class="active">🎉 Мероприятия</a>
-        <a href="rules.html"> Правила</a>
-        <a href="support.html">🙋 Поддержка</a>
     </nav>
+
+    <!-- Контент -->
+    <div class="content">
+
+        <h2 class="page-title">АКТИВНЫЕ МЕРОПРИЯТИЯ</h2>
+
+        <!-- Активная акция -->
+        <div class="card card-gold-border" id="referral">
+            <h2 class="gold">Акция "Приведи друга" 🎉</h2>
+            <p style="margin: 15px 0;">
+                Приглашайте друзей и зарабатывайте <strong class="gold">SevCoins</strong>, топовые приглашатели получат <strong class="gold">SevDiamonds</strong>!
+            </p>
+            <h3 style="margin-top: 15px;">Условия:</h3>
+            <ul style="margin: 10px 0 10px 20px; color: #b0b8c1;">
+                <li>Пригласите друга по вашему промокоду</li>
+                <li>Друг должен достичь 5 уровня</li>
+                <li>Вы получаете 1000 SevCoins за каждого друга</li>
+                <li>Топ-3 приглашателя получают SevDiamonds</li>
+            </ul>
+            <a href="#" class="btn">Участвовать</a>
+        </div>
+
+        <!-- Лотерея -->
+        <div class="card" id="lottery">
+            <h2 class="gold">Лотерея</h2>
+            <p class="gray-text" style="margin: 10px 0;">
+                Скоро! Следите за обновлениями.
+            </p>
+        </div>
+
+        <!-- Аукцион -->
+        <div class="card" id="auction">
+            <h2 class="gold">Аукцион</h2>
+            <p class="gray-text" style="margin: 10px 0;">
+                Скоро! Следите за обновлениями.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
