@@ -7,159 +7,252 @@
 body {
     background-color: #303841;
     color: #ffffff;
-    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     max-width: 600px;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { font-weight: 600; }
+h1, h2, h3 { font-weight: 600; letter-spacing: 0.5px; }
 .gold { color: #e4b328; }
 .gray-text { color: #b0b8c1; }
 
-/* Карточки */
+/* ===== КАРТОЧКИ ===== */
 .card {
-    background-color: #3a444f;
-    border-radius: 12px;
-    padding: 20px;
+    background: linear-gradient(145deg, #3a444f, #353f48);
+    border-radius: 16px;
+    padding: 24px;
     margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
 }
+.card:hover { transform: translateY(-2px); }
+
 .card-gold-border {
     border: 2px solid #e4b328;
-    box-shadow: 0 0 15px rgba(228, 179, 40, 0.2);
+    box-shadow: 0 0 25px rgba(228, 179, 40, 0.25), 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Кнопки */
+/* ===== КНОПКИ ===== */
 .btn {
-    background-color: #e4b328;
+    background: linear-gradient(135deg, #e4b328, #c99a1f);
     color: #303841;
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
     text-decoration: none;
     display: inline-block;
-    font-weight: bold;
-    margin-top: 10px;
+    font-weight: 700;
+    margin-top: 15px;
     border: none;
     cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(228, 179, 40, 0.3);
 }
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(228, 179, 40, 0.4);
+    text-decoration: none;
+    color: #303841;
+}
+
 .btn-outline {
-    background-color: transparent;
+    background: transparent;
     color: #e4b328;
     border: 2px solid #e4b328;
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
     text-decoration: none;
     display: inline-block;
-    font-weight: bold;
-    margin-top: 10px;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: all 0.2s ease;
+}
+.btn-outline:hover {
+    background: #e4b328;
+    color: #303841;
+    text-decoration: none;
 }
 
-/* Заголовки секций */
+/* ===== ЗАГОЛОВКИ СЕКЦИЙ ===== */
 .page-title {
     text-align: center;
-    font-size: 22px;
-    margin: 30px 0 20px;
-    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 35px 0 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
-/* Ссылки */
-a { color: #e4b328; text-decoration: none; }
-a:hover { text-decoration: underline; }
+/* ===== ССЫЛКИ ===== */
+a { color: #e4b328; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #f5c842; text-decoration: none; }
 
-/* Таблица */
-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-table th, table td { border: 1px solid #e4b328; padding: 10px; text-align: center; }
-table th { background-color: #3a444f; color: #e4b328; }
+/* ===== ТАБЛИЦА ===== */
+table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #3a444f; border-radius: 12px; overflow: hidden; }
+table th, table td { border: 1px solid rgba(228, 179, 40, 0.3); padding: 12px; text-align: center; }
+table th { background: rgba(228, 179, 40, 0.15); color: #e4b328; font-weight: 600; }
 
-/* Отзыв */
+/* ===== ОТЗЫВ ===== */
 .review {
-    background-color: #3a444f;
-    border-radius: 12px;
-    padding: 20px;
+    background: linear-gradient(145deg, #3a444f, #353f48);
+    border-radius: 16px;
+    padding: 24px;
     margin: 20px 0;
     border-left: 4px solid #e4b328;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
-.review-author { color: #e4b328; font-weight: bold; font-size: 18px; margin-bottom: 10px; }
-.review-text { font-style: italic; color: #b0b8c1; }
+.review-author { color: #e4b328; font-weight: 700; font-size: 18px; margin-bottom: 8px; }
+.review-text { font-style: italic; color: #b0b8c1; line-height: 1.7; }
 
 /* ===== ШАПКА ===== */
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #303841;
+    padding: 16px 20px;
+    background: rgba(48, 56, 65, 0.95);
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 50;
+    border-bottom: 1px solid rgba(228, 179, 40, 0.2);
 }
 .header-icon {
     background: none; border: none; cursor: pointer; padding: 8px;
     display: flex; align-items: center; justify-content: center;
+    border-radius: 8px; transition: background 0.2s;
 }
-.header-icon svg { width: 28px; height: 28px; fill: #ffffff; }
+.header-icon:hover { background: rgba(255, 255, 255, 0.1); }
+.header-icon svg { width: 26px; height: 26px; fill: #ffffff; }
 .header-logo { text-align: center; flex: 1; }
-.header-logo h1 { color: #e4b328; font-size: 18px; margin: 0; line-height: 1.2; }
-.header-logo p { color: #e4b328; font-size: 14px; margin: 0; }
+.header-logo h1 { color: #e4b328; font-size: 18px; margin: 0; line-height: 1.2; font-weight: 700; letter-spacing: 1px; }
+.header-logo p { color: #e4b328; font-size: 13px; margin: 0; opacity: 0.8; }
 
 /* ===== БОКОВОЕ МЕНЮ ===== */
 .menu-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5); z-index: 99;
-    opacity: 0; visibility: hidden; transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px);
+    z-index: 99; opacity: 0; visibility: hidden; transition: all 0.3s ease;
 }
 .menu-overlay.open { opacity: 1; visibility: visible; }
 
 .side-menu {
     position: fixed; top: 0; left: -300px; width: 280px; height: 100%;
-    background-color: #303841; z-index: 100; transition: left 0.3s ease;
+    background: linear-gradient(180deg, #303841, #2a3239);
+    z-index: 100; transition: left 0.3s ease;
     overflow-y: auto; padding: 20px 0;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
 }
 .side-menu.open { left: 0; }
 
 .menu-close {
     position: absolute; top: 15px; right: 15px;
     background: none; border: none; cursor: pointer; padding: 8px;
+    border-radius: 8px; transition: background 0.2s;
 }
+.menu-close:hover { background: rgba(255, 255, 255, 0.1); }
 .menu-close svg { width: 24px; height: 24px; fill: #ffffff; }
 
 .menu-list { list-style: none; padding: 0; margin: 60px 0 0 0; }
-.menu-list li { border-bottom: 1px solid #3a444f; }
+.menu-list li { border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
 .menu-list a, .menu-list button {
     display: flex; align-items: center; padding: 16px 20px;
-    color: #ffffff; text-decoration: none; font-size: 16px;
-    transition: background 0.2s; width: 100%; background: none;
+    color: #ffffff; text-decoration: none; font-size: 15px;
+    transition: all 0.2s; width: 100%; background: none;
     border: none; cursor: pointer; text-align: left; font-family: inherit;
 }
-.menu-list a:hover, .menu-list button:hover { background-color: #3a444f; text-decoration: none; }
-.menu-list a.active { color: #e4b328; background-color: #3a444f; }
-.menu-icon { margin-right: 12px; font-size: 20px; width: 24px; text-align: center; }
+.menu-list a:hover, .menu-list button:hover {
+    background: rgba(228, 179, 40, 0.1);
+    color: #e4b328;
+    text-decoration: none;
+}
+.menu-list a.active {
+    color: #e4b328;
+    background: rgba(228, 179, 40, 0.1);
+    border-left: 3px solid #e4b328;
+}
+.menu-icon { margin-right: 14px; font-size: 20px; width: 24px; text-align: center; }
 
 .submenu {
     max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
-    background-color: #2a3239;
+    background: rgba(0, 0, 0, 0.2);
 }
 .submenu.open { max-height: 200px; }
-.submenu a { padding-left: 56px; font-size: 14px; color: #b0b8c1; }
-.submenu a::before { content: '🎁'; margin-right: 8px; }
-.arrow-icon { margin-left: auto; transition: transform 0.3s ease; font-size: 12px; }
+.submenu a { padding-left: 58px; font-size: 14px; color: #b0b8c1; }
+.submenu a::before { content: '•'; margin-right: 10px; color: #e4b328; }
+.arrow-icon { margin-left: auto; transition: transform 0.3s ease; font-size: 12px; color: #b0b8c1; }
 .arrow-icon.rotated { transform: rotate(180deg); }
 
-/* ===== НИЖНЯЯ НАВИГАЦИЯ (КАК В ПРИЛОЖЕНИИ) ===== */
+/* ===== НИЖНЯЯ НАВИГАЦИЯ (СОВРЕМЕННАЯ, БЕЗ ТЕКСТА) ===== */
 .bottom-nav {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    background-color: #2a3239; border-top: 1px solid #e4b328;
-    display: flex; justify-content: space-around;
-    padding: 10px 0; max-width: 600px; margin: 0 auto; z-index: 100;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    background: rgba(42, 50, 57, 0.98);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(228, 179, 40, 0.3);
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 20px 0;
+    z-index: 100;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
 }
-.bottom-nav a {
-    display: flex; flex-direction: column; align-items: center;
-    text-decoration: none; color: #b0b8c1; font-size: 11px;
-    padding: 5px 10px; transition: color 0.2s;
-}
-.bottom-nav a:hover { color: #e4b328; text-decoration: none; }
-.bottom-nav a.active { color: #e4b328; }
-.bottom-nav-icon { font-size: 22px; margin-bottom: 3px; }
 
-/* Отступ для контента, чтобы нижняя панель не перекрывала текст */
-.content { padding: 20px 20px 90px 20px; }
+.bottom-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: #6b7280;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    position: relative;
+}
+
+.bottom-nav a:hover {
+    color: #e4b328;
+    background: rgba(228, 179, 40, 0.1);
+    text-decoration: none;
+}
+
+.bottom-nav a.active {
+    color: #e4b328;
+}
+
+.bottom-nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background: #e4b328;
+    border-radius: 2px;
+}
+
+.bottom-nav-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.bottom-nav-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+/* ===== КОНТЕНТ ===== */
+.content { padding: 20px 20px 100px 20px; }
+
+/* ===== УТИЛИТЫ ===== */
+.text-center { text-align: center; }
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
