@@ -8,51 +8,19 @@
 </head>
 <body>
 
-    <header class="top-header">
-        <button class="header-icon" onclick="toggleMenu()">
-            <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-        </button>
-        <div class="header-logo"><h1>GRAND MOBILE</h1><p>Severnyi</p></div>
-        <button class="header-icon">
-            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-        </button>
-    </header>
-
-    <div class="menu-overlay" id="menuOverlay"></div>
-    <nav class="side-menu" id="sideMenu">
-        <button class="menu-close" onclick="closeMenu()">
-            <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-        <ul class="menu-list">
-            <li><a href="index.html"><span class="menu-icon">🏠</span> Главная</a></li>
-            <li>
-                <button onclick="toggleSubmenu()">
-                    <span class="menu-icon">🎉</span> Мероприятия <span class="arrow-icon" id="eventsArrow">▼</span>
-                </button>
-                <div class="submenu" id="eventsSubmenu">
-                    <a href="events.html#referral">Приведи друга</a>
-                    <a href="events.html#lottery">Лотерея</a>
-                    <a href="events.html#auction">Аукцион</a>
-                </div>
-            </li>
-            <li><a href="rules.html" class="active"><span class="menu-icon">📜</span> Правила</a></li>
-            <li><a href="archive.html"><span class="menu-icon">🏆</span> Архив победителей</a></li>
-            <li><a href="reviews.html"><span class="menu-icon">⭐</span> Отзывы</a></li>
-            <li><a href="support.html"><span class="menu-icon">🙋</span> Центр поддержки</a></li>
-        </ul>
-    </nav>
-
     <div class="content">
         <h2 class="page-title">Правила</h2>
 
         <div class="card">
-            <h2 class="gold">1. Общие положения</h2>
-            <p class="mt-10">Данный ресурс является неофициальным фан-проектом. Grand Mobile является зарегистрированной торговой маркой соответствующих правообладателей. Мы не являемся разработчиками или аффилированными лицами.</p>
+            <div class="tech-label">РАЗДЕЛ 01</div>
+            <h2 class="gold" style="font-family: 'Orbitron', sans-serif; font-size: 16px; margin-top: 5px;">ОБЩИЕ ПОЛОЖЕНИЯ</h2>
+            <p class="mt-10" style="font-size: 15px; line-height: 1.7;">Данный ресурс является неофициальным фан-проектом. Grand Mobile является зарегистрированной торговой маркой соответствующих правообладателей. Мы не являемся разработчиками или аффилированными лицами.</p>
         </div>
 
         <div class="card">
-            <h2 class="gold">2. Участие в мероприятиях</h2>
-            <ul class="mt-10" style="margin-left: 20px; color: #b0b8c1; line-height: 1.8;">
+            <div class="tech-label">РАЗДЕЛ 02</div>
+            <h2 class="gold" style="font-family: 'Orbitron', sans-serif; font-size: 16px; margin-top: 5px;">УЧАСТИЕ В МЕРОПРИЯТИЯХ</h2>
+            <ul class="mt-10" style="margin-left: 20px; color: var(--text-gray); line-height: 1.8; font-family: 'Share Tech Mono', monospace;">
                 <li>Участвовать могут все игроки Grand Mobile</li>
                 <li>Для участия необходимо быть подписчиком канала</li>
                 <li>Решения организаторов являются окончательными</li>
@@ -61,8 +29,9 @@
         </div>
 
         <div class="card">
-            <h2 class="gold">3. Запрещено</h2>
-            <ul class="mt-10" style="margin-left: 20px; color: #b0b8c1; line-height: 1.8;">
+            <div class="tech-label">РАЗДЕЛ 03</div>
+            <h2 class="gold" style="font-family: 'Orbitron', sans-serif; font-size: 16px; margin-top: 5px;">ЗАПРЕЩЕНО</h2>
+            <ul class="mt-10" style="margin-left: 20px; color: var(--text-gray); line-height: 1.8; font-family: 'Share Tech Mono', monospace;">
                 <li>Использование читов и багов игры</li>
                 <li>Создание нескольких аккаунтов для участия</li>
                 <li>Оскорбления других участников</li>
@@ -71,8 +40,9 @@
         </div>
 
         <div class="card">
-            <h2 class="gold">4. Награды</h2>
-            <p class="mt-10">Все награды являются игровыми и не имеют реальной денежной ценности. Организаторы оставляют за собой право изменять условия мероприятий.</p>
+            <div class="tech-label">РАЗДЕЛ 04</div>
+            <h2 class="gold" style="font-family: 'Orbitron', sans-serif; font-size: 16px; margin-top: 5px;">НАГРАДЫ</h2>
+            <p class="mt-10" style="font-size: 15px; line-height: 1.7;">Все награды являются игровыми и не имеют реальной денежной ценности. Организаторы оставляют за собой право изменять условия мероприятий.</p>
         </div>
     </div>
 
@@ -91,6 +61,5 @@
         </a>
     </nav>
 
-    <script src="script.js"></script>
 </body>
 </html>
