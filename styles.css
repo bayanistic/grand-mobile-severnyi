@@ -570,6 +570,149 @@ table td {
     white-space: nowrap;
 }
 
+/* ===== МАГАЗИН ===== */
+.shop-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.shop-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(228, 179, 40, 0.3);
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.shop-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(228, 179, 40, 0.15);
+}
+
+.shop-card-image {
+    width: 180px;
+    height: 140px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.shop-card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.shop-card-image .emoji-product {
+    font-size: 100px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.shop-card-amount {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin-bottom: 4px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.shop-card-name {
+    font-size: 15px;
+    color: var(--text-white);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.shop-card-price {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--accent-gold), #c99a1f);
+    color: var(--bg-primary);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(228, 179, 40, 0.4);
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+.shop-card-price:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(228, 179, 40, 0.6);
+}
+
+.shop-card-price .price-icon {
+    font-size: 18px;
+}
+
+.shop-card-price .price-coin {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
+
+.shop-card-price .price-diamond {
+    font-size: 16px;
+}
+
+/* Категории магазина */
+.shop-categories {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 4px 0 12px 0;
+    margin-bottom: 16px;
+    scrollbar-width: none;
+}
+
+.shop-categories::-webkit-scrollbar {
+    display: none;
+}
+
+.shop-category {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    color: var(--text-gray);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+.shop-category:hover {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+.shop-category.active {
+    background: var(--accent-gold);
+    color: var(--bg-primary);
+    border-color: var(--accent-gold);
+}
+
 /* ===== ПОДВАЛ ===== */
 .footer-disclaimer {
     text-align: center;
