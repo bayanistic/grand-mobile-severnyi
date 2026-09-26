@@ -8,86 +8,71 @@
 </head>
 <body>
 
-    <header class="top-header">
-        <button class="header-icon" onclick="toggleMenu()">
-            <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-        </button>
-        <div class="header-logo">
-            <h1>GRAND MOBILE</h1>
-            <p>Severnyi</p>
-        </div>
-        <button class="header-icon">
-            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-        </button>
-    </header>
-
-    <div class="menu-overlay" id="menuOverlay"></div>
-    <nav class="side-menu" id="sideMenu">
-        <button class="menu-close" onclick="closeMenu()">
-            <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-        <ul class="menu-list">
-            <li><a href="index.html" class="active"><span class="menu-icon">🏠</span> Главная</a></li>
-            <li>
-                <button onclick="toggleSubmenu()">
-                    <span class="menu-icon">🎉</span> Мероприятия <span class="arrow-icon" id="eventsArrow">▼</span>
-                </button>
-                <div class="submenu" id="eventsSubmenu">
-                    <a href="events.html#referral">Приведи друга</a>
-                    <a href="events.html#lottery">Лотерея</a>
-                    <a href="events.html#auction">Аукцион</a>
-                </div>
-            </li>
-            <li><a href="rules.html"><span class="menu-icon">📜</span> Правила</a></li>
-            <li><a href="archive.html"><span class="menu-icon">🏆</span> Архив победителей</a></li>
-            <li><a href="reviews.html"><span class="menu-icon">⭐</span> Отзывы</a></li>
-            <li><a href="support.html"><span class="menu-icon">🙋</span> Центр поддержки</a></li>
-        </ul>
-    </nav>
-
     <div class="content">
+        
+        <!-- Промокод -->
         <div class="card card-gold-border text-center">
-            <h2 class="gray-text" style="font-size: 13px; letter-spacing: 3px;">ПРОМОКОД</h2>
-            <h1 class="gold" style="font-size: 36px; margin: 12px 0; font-weight: 800;">SEVERNYI</h1>
-            <p class="gray-text" style="font-size: 12px; margin-bottom: 18px; font-style: italic;">*доступно только для игроков до 5 уровня</p>
-            <div style="background: #fff; color: #303841; padding: 18px 24px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                <strong style="font-size: 16px;">VIP SILVER</strong><br>
-                <span style="color: #666; font-size: 14px;">7 дней</span><br>
-                <span style="color: #e4b328; font-size: 20px; font-weight: 800;">+ 30 000 ₽</span>
+            <div class="tech-label">ПРОМОКОД</div>
+            <div class="promo-code" style="margin: 15px 0;">SEVERNYI</div>
+            <p class="gray-text" style="font-size: 12px; margin-bottom: 20px; font-family: 'Share Tech Mono', monospace; font-style: italic;">
+                * доступно только для игроков до 5 уровня
+            </p>
+            <div class="promo-display">
+                <div class="vip-badge">VIP SILVER</div>
+                <div style="margin-top: 10px; font-family: 'Share Tech Mono', monospace; color: var(--text-gray);">
+                    7 дней
+                </div>
+                <div style="margin-top: 8px; font-family: 'Orbitron', sans-serif; font-size: 22px; font-weight: 800; color: var(--accent-gold); text-shadow: 0 0 15px var(--accent-gold-glow);">
+                    + 30 000 ₽
+                </div>
             </div>
         </div>
 
+        <div class="tech-line"></div>
+
+        <!-- Преимущества -->
         <h2 class="page-title">Наши преимущества</h2>
         <div class="card text-center">
-            <div style="font-size: 64px; margin-bottom: 10px;">⚖️</div>
-            <h3 style="font-size: 18px;">Справедливые условия победы</h3>
+            <div style="font-size: 64px; margin-bottom: 10px; filter: drop-shadow(0 0 10px rgba(228, 179, 40, 0.5));">⚖️</div>
+            <h3 style="font-size: 18px; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">Справедливые условия победы</h3>
         </div>
 
+        <!-- Активные мероприятия -->
         <h2 class="page-title">Активные мероприятия</h2>
         <div class="card">
-            <h3 style="color: #e4b328; margin-bottom: 10px;">Акция "Приведи друга" 🎉</h3>
-            <p class="gray-text" style="margin: 10px 0;">Приглашайте друзей и зарабатывайте SevCoins, топовые приглашатели получат SevDiamonds!</p>
-            <a href="events.html" class="btn">Подробнее →</a>
+            <div class="tech-badge" style="margin-bottom: 10px;">АКТИВНО</div>
+            <h3 style="color: var(--accent-gold); margin-bottom: 10px; font-family: 'Orbitron', sans-serif; font-size: 16px;">АКЦИЯ "ПРИВЕДИ ДРУГА"</h3>
+            <p class="gray-text" style="margin: 10px 0; font-size: 15px;">Приглашайте друзей и зарабатывайте <strong class="gold">SevCoins</strong>, топовые приглашатели получат <strong class="gold">SevDiamonds</strong>!</p>
+            <a href="events.html" class="btn">ПОДРОБНЕЕ →</a>
         </div>
+        
         <div class="card text-center">
-            <p class="gray-text">Мероприятия ожидаются...<br>Наша команда уже работает над созданием следующего мероприятия</p>
+            <div class="tech-label" style="margin-bottom: 10px;">СТАТУС: В РАЗРАБОТКЕ</div>
+            <p class="gray-text" style="font-family: 'Share Tech Mono', monospace;">Мероприятия ожидаются...<br>Наша команда уже работает над созданием следующего мероприятия</p>
         </div>
 
+        <!-- Победители последнего мероприятия -->
         <h2 class="page-title">Победители последнего мероприятия</h2>
         <div class="card">
-            <p><strong>Наименование события:</strong> Розыгрыш #6</p>
-            <p class="mt-10"><strong>Награда:</strong></p>
-            <p>🥇 750 000 игровых рублей</p>
-            <p>🥈 450 000 игровых рублей</p>
-            <p>🥉 300 000 игровых рублей</p>
-            <p class="mt-10"><strong>Дата награждения:</strong> 31.05.2026</p>
-            <p class="mt-10"><strong>Победители:</strong></p>
-            <p>🥇 Expressed_Darknees</p>
-            <p>🥈 Derox_Lancastery</p>
-            <p>🥉 Okwozy_Zakirov</p>
+            <div class="tech-label">СОБЫТИЕ</div>
+            <p style="font-family: 'Orbitron', sans-serif; font-size: 16px; margin: 5px 0 15px;">Розыгрыш #6</p>
+            
+            <div class="tech-label">НАГРАДА</div>
+            <p style="margin: 8px 0; font-family: 'Share Tech Mono', monospace;"> 750 000 игровых рублей</p>
+            <p style="margin: 8px 0; font-family: 'Share Tech Mono', monospace;">🥈 450 000 игровых рублей</p>
+            <p style="margin: 8px 0; font-family: 'Share Tech Mono', monospace;">🥉 300 000 игровых рублей</p>
+            
+            <div class="tech-label" style="margin-top: 15px;">ДАТА НАГРАЖДЕНИЯ</div>
+            <p style="font-family: 'Share Tech Mono', monospace; color: var(--accent-gold);">31.05.2026</p>
+            
+            <div class="tech-label" style="margin-top: 15px;">ПОБЕДИТЕЛИ</div>
+            <p style="margin: 8px 0; font-family: 'Share Tech Mono', monospace;">🥇 Expressed_Darknees</p>
+            <p style="margin: 8px 0; font-family: 'Share Tech Mono', monospace;">🥈 Derox_Lancastery</p>
+            <p style="margin: 8px 0; font-family: 'Share Tech Mono', monospace;">🥉 Okwozy_Zakirov</p>
         </div>
-        <p class="text-center"><a href="archive.html">Архив победителей →</a></p>
+        <p class="text-center"><a href="archive.html" style="font-family: 'Orbitron', sans-serif; font-size: 12px; letter-spacing: 2px;">АРХИВ ПОБЕДИТЕЛЕЙ →</a></p>
 
+        <!-- Топ победителей -->
         <h2 class="page-title">Топ победителей</h2>
         <table>
             <tr><th>Имя игрока</th><th>Кол-во побед</th></tr>
@@ -97,31 +82,35 @@
             <tr><td>Zizka Curitsa<br>Suren Ganster<br>Mikhalych Boss<br>Expressed Darknees<br>Vova Gang</td><td>1</td></tr>
         </table>
 
+        <!-- Отзывы -->
         <h2 class="page-title">Отзывы участников</h2>
         <div class="review">
             <div class="review-author">Zizka Curitsa</div>
-            <p class="gray-text" style="font-size: 12px;">10.01.2026 • Победитель розыгрыша #1</p>
+            <p class="gray-text" style="font-size: 11px; font-family: 'Share Tech Mono', monospace; letter-spacing: 1px;">10.01.2026 • ПОБЕДИТЕЛЬ РОЗЫГРЫША #1</p>
             <p class="review-text mt-10">Хочу выразить искреннюю благодарность команде Severnyi за проведение таких конкурсов!!! Такие суммы тяжело заработать начинающим игрокам... Я была в шоке, когда увидела результаты конкурса. Даже не знаю, просто не верилось, но я уже получила приз. Ещё раз спасибо большое!!!</p>
         </div>
-        <p class="text-center"><a href="reviews.html">К отзывам →</a></p>
+        <p class="text-center"><a href="reviews.html" style="font-family: 'Orbitron', sans-serif; font-size: 12px; letter-spacing: 2px;">К ОТЗЫВАМ →</a></p>
 
+        <!-- Центр поддержки -->
         <h2 class="page-title">Центр поддержки</h2>
         <div class="card text-center">
-            <p>Центр поддержки – Ваш надёжный проводник среди часто задаваемых вопросов, полезных советов и консультаций от профессионалов.</p>
-            <a href="support.html" class="btn-outline">В центр поддержки</a>
+            <p style="font-size: 15px; line-height: 1.7;">Центр поддержки – Ваш надёжный проводник среди часто задаваемых вопросов, полезных советов и консультаций от профессионалов.</p>
+            <a href="support.html" class="btn-outline">В ЦЕНТР ПОДДЕРЖКИ</a>
         </div>
 
+        <!-- Скачать игру -->
         <h2 class="page-title">Скачать игру</h2>
-        <div class="card text-center">
-            <p><a href="#">📥 Play Market</a></p>
-            <p><a href="#">📥 RuStore</a></p>
-            <p><a href="#">📥 App Store</a></p>
-            <p><a href="#">📥 .APK (с официального сайта)</a></p>
+        <div class="card" style="padding: 15px;">
+            <a href="#" class="download-link">Play Market</a>
+            <a href="#" class="download-link">RuStore</a>
+            <a href="#" class="download-link">App Store</a>
+            <a href="#" class="download-link">.APK (с официального сайта)</a>
         </div>
 
+        <!-- Присоединяйтесь -->
         <h2 class="page-title">Присоединяйтесь</h2>
         <div class="text-center" style="margin-bottom: 30px;">
-            <a href="#" class="btn" style="background: #0088cc; color: #fff; border-radius: 50%; width: 64px; height: 64px; display: inline-flex; align-items: center; justify-content: center; font-size: 28px; padding: 0;">✈</a>
+            <a href="#" class="telegram-btn">✈</a>
         </div>
     </div>
 
@@ -148,6 +137,5 @@
         </a>
     </nav>
 
-    <script src="script.js"></script>
 </body>
 </html>
