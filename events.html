@@ -8,49 +8,62 @@
 </head>
 <body>
 
+    <div class="top-actions">
+        <a href="#" class="top-btn"><span class="top-btn-icon">📚</span> База знаний</a>
+        <a href="support.html" class="top-btn"><span class="top-btn-icon">💬</span> Поддержка</a>
+    </div>
+
+    <div class="banner">
+        <div class="banner-img">
+            <div class="banner-placeholder">
+                <div class="character">🎉</div>
+                <div class="logo-text">МЕРОПРИЯТИЯ</div>
+                <div class="logo-sub">Severnyi Events</div>
+            </div>
+        </div>
+    </div>
+
     <div class="content">
-        <h2 class="page-title">Активные мероприятия</h2>
+        <h2 class="section-title">Активные мероприятия</h2>
 
-        <div class="card card-gold-border" id="referral">
-            <div class="tech-badge" style="margin-bottom: 10px;">АКТИВНО</div>
-            <h2 class="gold" style="margin-bottom: 12px; font-family: 'Orbitron', sans-serif; font-size: 18px;">АКЦИЯ "ПРИВЕДИ ДРУГА"</h2>
-            <p style="margin: 15px 0; font-size: 15px;">Приглашайте друзей и зарабатывайте <strong class="gold">SevCoins</strong>, топовые приглашатели получат <strong class="gold">SevDiamonds</strong>!</p>
-            <h3 style="margin-top: 18px; color: var(--accent-gold); font-family: 'Orbitron', sans-serif; font-size: 14px; letter-spacing: 2px;">УСЛОВИЯ:</h3>
-            <ul style="margin: 12px 0 12px 20px; color: var(--text-gray); line-height: 1.8; font-family: 'Share Tech Mono', monospace;">
-                <li>Пригласите друга по вашему промокоду</li>
-                <li>Друг должен достичь 5 уровня</li>
-                <li>Вы получаете 1000 SevCoins за каждого друга</li>
-                <li>Топ-3 приглашателя получают SevDiamonds</li>
-            </ul>
-            <a href="#" class="btn">УЧАСТВОВАТЬ</a>
+        <div class="event-card" style="border: 2px solid var(--accent-gold);">
+            <div class="event-thumb" style="background: linear-gradient(135deg, #e4b328, #c99a1f);">🎰</div>
+            <div class="event-info">
+                <div class="event-title"><span>🎟️</span> Лотерея</div>
+                <div class="event-desc">Главный приз: Lamborghini Aventador SVJ</div>
+                <a href="#" class="btn" style="margin-top: 8px; padding: 6px 12px; font-size: 11px;">Участвовать</a>
+            </div>
         </div>
 
-        <div class="card" id="lottery">
-            <div class="tech-label" style="margin-bottom: 10px;">СТАТУС: СКОРО</div>
-            <h2 class="gold" style="font-family: 'Orbitron', sans-serif; font-size: 18px;">ЛОТЕРЕЯ</h2>
-            <p class="gray-text mt-10" style="font-family: 'Share Tech Mono', monospace;">Следите за обновлениями.</p>
+        <div class="event-card">
+            <div class="event-thumb">👥</div>
+            <div class="event-info">
+                <div class="event-title"><span>🎁</span> Приведи друга</div>
+                <div class="event-desc">SevCoins и SevDiamonds за каждого друга</div>
+            </div>
         </div>
 
-        <div class="card" id="auction">
-            <div class="tech-label" style="margin-bottom: 10px;">СТАТУС: СКОРО</div>
-            <h2 class="gold" style="font-family: 'Orbitron', sans-serif; font-size: 18px;">АУКЦИОН</h2>
-            <p class="gray-text mt-10" style="font-family: 'Share Tech Mono', monospace;">Следите за обновлениями.</p>
+        <div class="event-card">
+            <div class="event-thumb">🔨</div>
+            <div class="event-info">
+                <div class="event-title"><span>💎</span> Аукцион</div>
+                <div class="event-desc">Скоро! Следите за обновлениями.</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Ожидаются</h2>
+        <div class="card text-center">
+            <p class="gray-text" style="font-size: 13px;">Мероприятия ожидаются...<br>Наша команда уже работает над созданием следующего мероприятия</p>
         </div>
     </div>
 
     <nav class="bottom-nav">
-        <a href="index.html" title="Главная">
-            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span>
-        </a>
-        <a href="events.html" class="active" title="Мероприятия">
-            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg></span>
-        </a>
-        <a href="archive.html" title="Победители">
-            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg></span>
-        </a>
-        <a href="support.html" title="Поддержка">
-            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg></span>
-        </a>
+        <a href="index.html"><span class="bottom-nav-icon"><span class="emoji-icon">🏠</span></span><span class="bottom-nav-label">Главная</span></a>
+        <a href="events.html" class="active"><span class="bottom-nav-icon"><span class="emoji-icon">🎉</span></span><span class="bottom-nav-label">SevEvents</span></a>
+        <a href="#"><span class="bottom-nav-icon"><span class="emoji-icon">🛒</span></span><span class="bottom-nav-label">Магазин</span></a>
+        <a href="rules.html"><span class="bottom-nav-icon"><span class="emoji-icon">📜</span></span><span class="bottom-nav-label">Правила</span></a>
+        <a href="archive.html"><span class="bottom-nav-icon"><span class="emoji-icon">🏆</span></span><span class="bottom-nav-label">Рейтинг</span></a>
+        <a href="reviews.html"><span class="bottom-nav-icon"><span class="emoji-icon">⭐</span></span><span class="bottom-nav-label">Отзывы</span></a>
     </nav>
 
 </body>
